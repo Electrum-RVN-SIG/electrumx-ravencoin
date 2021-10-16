@@ -36,7 +36,7 @@ class OnDiskBlock:
     path = 'meta/blocks'
     legacy_del_regex = re.compile('block[0-9]{1,7}$')
     block_regex = re.compile('([0-9]{1,7})-([0-9a-f]{64})$')
-    chunk_size = 25_000_000
+    chunk_size = 5_000_000
     # On-disk blocks. hex_hash->(height, size) pair
     blocks = {}
     # Map from hex hash to prefetch task
